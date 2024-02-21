@@ -1,0 +1,78 @@
+컨셉:
+
+가능하면 반응형으로 제작
+
+레퍼런스: https://rncstportfolio.netlify.app/
+
+표지 (banner)
+A Rookie Front-End Developer
+Look Forward
+Step Forward
+Improve Onward
+내 스킬 또는 이력 소개 (skill inventory/skill packages/stacked skills)
+자기 소개 (About)
+작품 소개 (Portfolio)
+연락처 (Contact)
+
+
+사용 색상: 흰색, 파란색, 노란색
+
+top banner: 좌측 상단
+top GNB 메뉴: 우측 상단
+GNB 메뉴: 우측 중단, window fixed
+
+scroll to top: 우측 하단
+feedback inqury
+
+
+대체로 유사한 레이아웃으로 만들되, 색상은 조금 다르게
+
+
+섹션마다 제목 넣기
+
+나의 스킬 섹션:
+
+포토샵 이미지는 하단에 포토샵 문구 지우기
+
+각 스킬 이미지 사이즈 통일하기
+스킬을 묶어주는 박스에 그림자 등의 효과 넣어주기
+
+
+
+프로젝트 소개 섹션: 
+
+프로젝트 사진들(그림자 효과)
+
+프로젝트 링크
+
+프로젝트 설명 
+
+형식으로 구성
+
+
+연락처 섹션: 
+
+조금 더 꾸며보자
+
+
+상단 부분 (top banner) 레퍼런스:
+
+https://kimminseoung.github.io/PortFolio/
+
+https://seul5106.github.io/MyReactPortfolio/
+
+https://aroma-oh-portfolio.com/
+
+https://weaklion.github.io/React-PortFolio/
+
+https://ianlunn.co.uk/
+
+대다수 포폴들은 top banner를 content 섹션 우측 상단 보단 browser 의 우측 상단으로 우겨넣는 경향을 보임
+
+=포트폴리오 top banner의 font size를 줄이고 최대한 browser 우측 상단으로 위치할 에정
+
+transparent를 넣는건 추후에 추가 예정
+
+transparent를 넣는건 추후에 추가 예정
+
+

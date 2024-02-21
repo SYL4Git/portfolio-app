@@ -1,0 +1,54 @@
+Home.js:
+import { StyledHome, StyledAbout } from '../styledComponent/StyledHome';
+
+StyledHome.js:
+import styled from 'styled-components';
+
+export const StyledHome = styled.div`
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+`;
+export const StyledAbout = styled.div`
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+
+	.bannerImg {
+		width: 50%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.bannerImg img {
+		width: 100%;
+		height: auto;
+	}
+	.catchPhrase {
+		width: 250px;
+		margin: 50px auto;
+		.WIA p {
+			margin-bottom: 20px;
+		}
+		.WIA .frst {
+			font-size: 40px;
+			line-height: 40px;
+		}
+		.WIA .scnd {
+			font-size: 20px;
+		}
+		.creed {
+		}
+	}
+`;
+ERROR
+Should have a queue. This is likely a bug in React. Please file an issue.
+    at updateReducer (http://localhost:3000/static/js/bundle.js:21597:15)
+    at updateState (http://localhost:3000/static/js/bundle.js:21965:14)
+    at Object.useState (http://localhost:3000/static/js/bundle.js:22762:20)
+    at useState (http://localhost:3000/static/js/bundle.js:36249:25)
+    at Home (http://localhost:3000/main.ed5c5b2cd9213e317e3d.hot-update.js:77:84)
+    at renderWithHooks (http://localhost:3000/static/js/bundle.js:21370:22)
+    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:24250:24)
+    at beginWork (http://localhost:3000/static/js/bundle.js:25962:20)
+    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:10966:18)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:11010:20)
