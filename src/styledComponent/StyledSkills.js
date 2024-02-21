@@ -42,11 +42,12 @@ export const Java = styled.div`
 	margin-bottom: 60px;
 
 	div {
-		width: 60px;
-		height: 60px;
+		padding: 20px 20px;
+		margin: 0 30px;
+		background-color: white;
 	}
 	div img {
-		width: 100%;
+		width: 100px;
 		height: auto;
 	}
 `;
