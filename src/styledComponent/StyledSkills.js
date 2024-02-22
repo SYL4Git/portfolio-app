@@ -105,7 +105,6 @@ export const Miscellaneous = styled.div`
 		background-color: white;
 	}
 	div img {
-		display: block;
 		width: 150px;
 		height: auto;
 		margin: 10px auto 0;

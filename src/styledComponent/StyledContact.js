@@ -5,5 +5,7 @@ export const StyledContact = styled.div`
 	width: 1200px;
 	margin: 0 auto;
 	.contactIn {
+		width: 600px;
+		margin: 0 auto;
 	}
 `;
