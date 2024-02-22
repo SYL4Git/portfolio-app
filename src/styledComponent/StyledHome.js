@@ -7,7 +7,7 @@ export const StyledHome = styled.div`
 `;
 export const StyledAbout = styled.div`
 	width: 1200px;
-	margin: 80px auto 50px;
+	margin: 160px auto;
 	display: flex;
 
 	.bannerImg {

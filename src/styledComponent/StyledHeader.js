@@ -14,14 +14,14 @@ export const StyledHeader = styled.div`
 	.logo img {
 		width: 50px;
 		height: 100%;
-		margin-left: 10px;
 		padding: 4px 0;
+		margin-left: 60px;
 	}
 
 	.menuModal img {
 		width: 45px;
 		height: 100%;
 		margin-top: 10px;
-		margin-right: 10px;
+		margin-right: 80px;
 	}
 `;
