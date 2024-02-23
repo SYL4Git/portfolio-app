@@ -46,7 +46,7 @@ const Home = () => {
 				<div className="catchPhrase">
 					<div className="wia">
 						<p className="frst">자기소개: </p>
-						<p className="scnd">신참 프론트엔드 개발자 입니다.</p>
+						<p className="scnd">신입 프론트엔드 개발자 입니다.</p>
 					</div>
 					<div className="creed">
 						<p className="frst">좌우명:</p>

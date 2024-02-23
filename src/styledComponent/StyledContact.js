@@ -47,7 +47,7 @@ export const StyledContact = styled.div`
 			p {
 				font-weight: bold;
 				font-size: 16px;
-				margin: 24px 10px;
+				margin: 22px 10px;
 			}
 			input {
 				display: block;
