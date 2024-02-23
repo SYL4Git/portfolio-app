@@ -44,12 +44,12 @@ const Home = () => {
 					<img src="./img/boatOnSpace.jpg" alt="banner" />
 				</div>
 				<div className="catchPhrase">
-					<div className="WIA">
-						<p className="frst">Who I Am: </p>
-						<p className="scnd">A Rookie Front-End Developer</p>
+					<div className="wia">
+						<p className="frst">자기소개: </p>
+						<p className="scnd">신참 프론트엔드 개발자 입니다.</p>
 					</div>
 					<div className="creed">
-						<p className="frst">My Creed:</p>
+						<p className="frst">:</p>
 						<p className="scnd">Look Forward</p>
 						<p className="thrd">Step Forward</p>
 						<p className="frth">Improve Onward</p>

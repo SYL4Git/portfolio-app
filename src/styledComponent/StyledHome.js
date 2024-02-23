@@ -22,14 +22,14 @@ export const StyledAbout = styled.div`
 	.catchPhrase {
 		width: 250px;
 		margin: 50px auto;
-		.WIA p {
+		.wia p {
 			margin-bottom: 20px;
 		}
-		.WIA .frst {
+		.wia .frst {
 			font-size: 40px;
 			line-height: 40px;
 		}
-		.WIA .scnd {
+		.wia .scnd {
 			font-size: 20px;
 		}
 		.creed {
