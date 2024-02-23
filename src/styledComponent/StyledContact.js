@@ -14,7 +14,7 @@ export const StyledContact = styled.div`
 		justify-content: center;
 		font-size: 40px;
 		line-height: 40px;
-		margin-bottom: 50px;
+		padding: 20px 0 40px 0;
 	}
 	.CIIn {
 		display: flex;
@@ -35,15 +35,16 @@ export const StyledContact = styled.div`
 			font-weight: 400;
 		}
 	}
-	.inquiry {
+	.inquiryForm {
 		width: 600px;
-		margin: 80px auto;
-		padding: 20px;
+		margin: 10px auto;
+		padding: 30px 0;
 		border: 1px solid black;
+		border-radius: 20px;
 		.inquiryLabel {
 			display: flex;
 			justify-content: center;
-			margin-bottom: 40px;
+			margin-bottom: 10px;
 			p {
 				font-weight: bold;
 				font-size: 16px;
@@ -62,12 +63,11 @@ export const StyledContact = styled.div`
 		}
 	}
 	.submit {
-		position: relative;
+		display: flex;
+		justify-content: right;
 		.btnSubmit {
-			position: absolute;
-			right: 0;
-			bottom: 0;
 			padding: 10px 10px;
+			margin-right: 65px;
 		}
 	}
 `;
