@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyledContact } from '../styledComponent/StyledContact';
 
 const Contact = React.forwardRef((_props, ref) => {
+	const [name, setName] = useState('');
+	const [age, setAge] = useState('');
+	const [number, setNumber] = useState('');
+	const [email, setEmail] = useState('');
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log('Form submitted:', name);
+	};
 	return (
 		<StyledContact ref={ref} className="styledContact">
 			<div className="contactIn">

@@ -19,8 +19,9 @@ export const StyledPortfolio = styled.div`
 	img {
 		width: 600px;
 		height: auto;
+		margin-left: 50px;
 	}
 	.info {
-		margin-left: 100px;
+		margin-left: 150px;
 	}
 `;
