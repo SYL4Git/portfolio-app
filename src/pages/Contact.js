@@ -15,7 +15,7 @@ const Contact = React.forwardRef((_props, ref) => {
 	return (
 		<StyledContact ref={ref} className="styledContact">
 			<div className="contactInfo">
-				<h1 className="CITitle">Contact information</h1>
+				<h1 className="title">Contact information</h1>
 				<div className="CIIn">
 					<div className="CILeft">
 						<p>
@@ -37,50 +37,51 @@ const Contact = React.forwardRef((_props, ref) => {
 			</div>
 			<div className="inquiry">
 				<form className="inquiryForm" onSubmit={handleSubmit}>
-					<h1 className="inquiryTitle">Inquiry</h1>
-					<label className="inquiryLable">
-						<div className="name">
-							이름:
+					<h1 className="title">Inquiry</h1>
+					<label className="inquiryLabel">
+						<div className="elements">
+							<p className="elemName">이름:</p>
+							<p className="elemAge">나이: </p>
+							<p className="elemEmail">이메일:</p>
+							<p className="elemTitle">제목:</p>
+							<p className="elemInquiry">내용:</p>
+						</div>
+						<div className="inputs">
 							<input
+								className="inptName"
 								type="text"
 								value={name}
 								onChange={(e) => setName(e.target.value)}
 							/>
-						</div>
-						<div className="age">
-							나이:
 							<input
+								className="inptAge"
 								type="number"
 								value={age}
 								onChange={(e) => setAge(e.target.value)}
 							/>
-						</div>
-						<div className="number">
-							연락처:
 							<input
+								className="inptNumber"
 								type="number"
 								value={number}
 								onChange={(e) => setNumber(e.target.value)}
 							/>
-						</div>
-						<div className="email">
-							이메일:
 							<input
+								className="inptEmail"
 								type="text"
 								value={email}
 								onChange={(e) => setEmail(e.target.value)}
 							/>
-						</div>
-						<div className="inquiryDetail">
-							문의 내용:
 							<input
+								className="inptInquiry"
 								type="text"
 								value={inquiry}
 								onChange={(e) => setInquiry(e.target.value)}
 							/>
 						</div>
 					</label>
-					<input type="submit" value="보내기" />
+					<div className="submit">
+						<input className="btnSubmit" type="submit" value="보내기" />
+					</div>
 				</form>
 			</div>
 		</StyledContact>

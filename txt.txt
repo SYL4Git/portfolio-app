@@ -1,54 +1,187 @@
-Home.js:
-import { StyledHome, StyledAbout } from '../styledComponent/StyledHome';
+import React from 'react';
+import {
+	StyledSkills,
+	NonJava,
+	Java,
+	Miscellaneous,
+} from '../styledComponent/StyledSkills';
 
-StyledHome.js:
+const Skills = React.forwardRef((_props, ref) => {
+	return (
+		<StyledSkills ref={ref} className="styledSkills">
+			<h1 className="title">Skill Inventory</h1>
+			<NonJava className="styledNonJava">
+				<div className="html">
+					<img src="./img/html5.png" alt="html5" />
+				</div>
+				<div className="css">
+					<img src="./img/css3.png" alt="css" />
+				</div>
+			</NonJava>
+			<Java className="styledJava">
+				<div className="javaScript">
+					<img src="./img/javascript.png" alt="javaScript" />
+				</div>
+				<div className="underJs">
+					<div className="react">
+						<img src="./img/reactLogoFrom_react.dev.png" alt="react" />
+					</div>
+					<div className="jQuery">
+						<img src="./img/jquery.png" alt="jQuery" />
+					</div>
+					<div className="slick">
+						<img src="./img/slick.png" alt="slick" />
+					</div>
+					<div className="typeScript">
+						<img src="./img/TypeScript.png" alt="typeScript" />
+					</div>
+				</div>
+			</Java>
+			<Miscellaneous className="styledMiscellaneous">
+				<div className="git">
+					<img src="./img/gitNgithub.png" alt="git" />
+				</div>
+				<div className="figma">
+					<img src="./img/figma.png" alt="figma" />
+				</div>
+				<div className="netlify">
+					<img src="./img/netlify.png" alt="netlify" />
+				</div>
+				<div className="firebase">
+					<img src="./img/Firebase_Logo.png" alt="firebase" />
+				</div>
+				<div className="node">
+					<img src="./img/NodeJs_logo.png" alt="node" />
+				</div>
+				<div className="ps">
+					<img src="./img/photoshop_noBack.svg" alt="photoshop" />
+				</div>
+			</Miscellaneous>
+		</StyledSkills>
+	);
+});
+export default Skills;
+
 import styled from 'styled-components';
 
-export const StyledHome = styled.div`
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
-`;
-export const StyledAbout = styled.div`
-	width: 1200px;
-	margin: 0 auto;
+export const StyledSkills = styled.div`
+	scroll-margin-top: 180px;
+	widith: 1200px;
 	display: flex;
-
-	.bannerImg {
-		width: 50%;
-		height: auto;
-		margin-bottom: 50px;
-	}
-	.bannerImg img {
-		width: 100%;
-		height: auto;
-	}
-	.catchPhrase {
-		width: 250px;
-		margin: 50px auto;
-		.WIA p {
-			margin-bottom: 20px;
-		}
-		.WIA .frst {
-			font-size: 40px;
-			line-height: 40px;
-		}
-		.WIA .scnd {
-			font-size: 20px;
-		}
-		.creed {
-		}
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+	.title {
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 40px;
 	}
 `;
-ERROR
-Should have a queue. This is likely a bug in React. Please file an issue.
-    at updateReducer (http://localhost:3000/static/js/bundle.js:21597:15)
-    at updateState (http://localhost:3000/static/js/bundle.js:21965:14)
-    at Object.useState (http://localhost:3000/static/js/bundle.js:22762:20)
-    at useState (http://localhost:3000/static/js/bundle.js:36249:25)
-    at Home (http://localhost:3000/main.ed5c5b2cd9213e317e3d.hot-update.js:77:84)
-    at renderWithHooks (http://localhost:3000/static/js/bundle.js:21370:22)
-    at updateFunctionComponent (http://localhost:3000/static/js/bundle.js:24250:24)
-    at beginWork (http://localhost:3000/static/js/bundle.js:25962:20)
-    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:10966:18)
-    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:11010:20)
+export const NonJava = styled.div`
+	display: flex;
+	padding: 40px 20px;
+	margin-bottom: 60px;
+	border: 1px solid black;
+	background-color: yellow;
+	border-radius: 20px;
+
+	.html {
+		padding: 20px 20px;
+		margin: 0 30px;
+		border: 1px solid black;
+
+		background-color: white;
+	}
+	.html img {
+		width: 100px;
+		height: auto;
+	}
+	.css {
+		padding: 20px 20px;
+		margin: -2px 30px 0;
+		border: 1px solid black;
+
+		background-color: white;
+	}
+	.css img {
+		width: 100px;
+		height: auto;
+	}
+`;
+export const Java = styled.div`
+	padding: 40px 40px;
+	margin-bottom: 60px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: yellow;
+
+	.javaScript {
+		height: 90px;
+		padding: 20px 20px;
+		margin: 0 30px;
+		border: 1px solid black;
+		background-color: white;
+	}
+	.javaScript img {
+		display: block;
+		width: 150px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.underJs div {
+		height: 90px;
+		padding: 20px 20px;
+		margin: 30px 30px;
+		border: 1px solid black;
+		background-color: white;
+	}
+	.underJs img {
+		display: block;
+		width: 100px;
+		height: auto;
+	}
+	.react img {
+		margin: 0 auto;
+	}
+	.jQuery img {
+		margin: 20px auto 0;
+	}
+	.slick img {
+		margin: 10px auto 0;
+	}
+	.typeScript img {
+		margin: 15px auto 0;
+	}
+`;
+export const Miscellaneous = styled.div`
+	padding: 40px 40px;
+	margin-bottom: 60px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: yellow;
+
+	div {
+		height: 90px;
+		padding: 20px 20px;
+		margin: 30px 30px;
+		border: 1px solid black;
+		background-color: white;
+	}
+	div img {
+		width: 150px;
+		height: auto;
+		margin: 10px auto 0;
+	}
+	.firebase img {
+		margin-top: 20px;
+	}
+	.node img {
+		margin-top: 0px;
+	}
+	.ps img {
+		width: 150px;
+		height: 90px;
+		margin-top: 0;
+	}
+`;

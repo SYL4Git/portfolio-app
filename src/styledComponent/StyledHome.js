@@ -20,19 +20,35 @@ export const StyledAbout = styled.div`
 		height: auto;
 	}
 	.catchPhrase {
-		width: 250px;
+		width: 300px;
 		margin: 50px auto;
-		.wia p {
-			margin-bottom: 20px;
-		}
-		.wia .frst {
-			font-size: 40px;
-			line-height: 40px;
-		}
-		.wia .scnd {
-			font-size: 20px;
+		.wia {
+			margin-top: 80px;
+			margin-bottom: 100px;
+			p {
+				margin-bottom: 20px;
+			}
+			.frst {
+				font-size: 40px;
+				line-height: 40px;
+			}
+			.scnd {
+				font-size: 20px;
+			}
 		}
 		.creed {
+			.frst {
+				margin-bottom: 20px;
+				font-size: 40px;
+				line-height: 40px;
+			}
+			.scnd,
+			.thrd,
+			.frth {
+				margin-bottom: 10px;
+				font-size: 18px;
+				line-height: 20px;
+			}
 		}
 	}
 `;

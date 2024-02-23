@@ -49,10 +49,10 @@ const Home = () => {
 						<p className="scnd">신참 프론트엔드 개발자 입니다.</p>
 					</div>
 					<div className="creed">
-						<p className="frst">:</p>
-						<p className="scnd">Look Forward</p>
-						<p className="thrd">Step Forward</p>
-						<p className="frth">Improve Onward</p>
+						<p className="frst">좌우명:</p>
+						<p className="scnd">앞을 보고</p>
+						<p className="thrd">한걸음씩 전진하며</p>
+						<p className="frth">전보다 발전하자</p>
 					</div>
 				</div>
 			</StyledAbout>

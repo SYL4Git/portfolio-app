@@ -91,6 +91,10 @@ export const Java = styled.div`
 	}
 `;
 export const Miscellaneous = styled.div`
+	width: 800px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
 	padding: 40px 40px;
 	margin-bottom: 60px;
 	border: 1px solid black;
