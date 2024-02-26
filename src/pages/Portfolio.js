@@ -14,11 +14,12 @@ const Portfolio = React.forwardRef((_props, ref) => {
 					</div>
 					<div className="info">
 						<div className="itmTitle">
-							<p>{it.title}</p>
+							<p>Project Title:</p>
+							<span>{it.title}</span>
 						</div>
 						<div className="link">
 							<div className="github">
-								<p>Github:</p>
+								<p>Github link:</p>
 								<a
 									href={it.github}
 									target="_blank"
@@ -28,7 +29,7 @@ const Portfolio = React.forwardRef((_props, ref) => {
 								</a>
 							</div>
 							<div className="deploy">
-								<p>Deployed: </p>
+								<p>Deployed link: </p>
 								<a
 									href={it.link}
 									target="_blank"
@@ -38,7 +39,10 @@ const Portfolio = React.forwardRef((_props, ref) => {
 								</a>
 							</div>
 						</div>
-						<div className="detail">{it.detail}</div>
+						<div className="detail">
+							<p>Detail: </p>
+							<span>{it.detail}</span>
+						</div>
 					</div>
 				</div>
 			))}
