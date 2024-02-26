@@ -13,9 +13,18 @@ const Portfolio = React.forwardRef((_props, ref) => {
 						<img src={it.preview} alt="prjctPreview" />
 					</div>
 					<div className="info">
+						<div className="itmTitle">
+							<p>{it.title}</p>
+						</div>
 						<div className="link">
-							<p>Links</p>
-							{it.link}
+							<div className="github">
+								<p>Github:</p>
+								{it.github}
+							</div>
+							<div className="deploy">
+								<p>Deployed: </p>
+								{it.link}
+							</div>
 						</div>
 						<div className="detail">{it.detail}</div>
 					</div>
