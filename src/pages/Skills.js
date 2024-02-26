@@ -12,10 +12,10 @@ const Skills = React.forwardRef((_props, ref) => {
 			<h1 className="title">Skill Inventory</h1>
 			<NonJava className="styledNonJava">
 				<div className="html">
-					<img src="./img/html5.png" alt="html5" />
+					<img src=".\img\html5.png" alt="html5" />
 				</div>
 				<div className="css">
-					<img src="./img/css3.png" alt="css" />
+					<img src=".\img\css3.png" alt="css" />
 				</div>
 			</NonJava>
 			<Java className="styledJava">
@@ -23,13 +23,13 @@ const Skills = React.forwardRef((_props, ref) => {
 					<img src="./img/javascript.png" alt="javaScript" />
 				</div>
 				<div className="react">
-					<img src="./img/reactLogoFrom_react.dev.png" alt="react" />
+					<img src=".\img\reactLogoFrom_react.dev.png" alt="react" />
 				</div>
 				<div className="jQuery">
 					<img src="./img/jquery.png" alt="jQuery" />
 				</div>
 				<div className="slick">
-					<img src="./img/slick.png" alt="slick" />
+					<img src=".\img\slick.png" alt="slick" />
 				</div>
 				<div className="typeScript">
 					<img src="./img/TypeScript.png" alt="typeScript" />
