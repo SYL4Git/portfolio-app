@@ -22,19 +22,17 @@ const Skills = React.forwardRef((_props, ref) => {
 				<div className="javaScript">
 					<img src="./img/javascript.png" alt="javaScript" />
 				</div>
-				<div className="underJs">
-					<div className="react">
-						<img src="./img/reactLogoFrom_react.dev.png" alt="react" />
-					</div>
-					<div className="jQuery">
-						<img src="./img/jquery.png" alt="jQuery" />
-					</div>
-					<div className="slick">
-						<img src="./img/slick.png" alt="slick" />
-					</div>
-					<div className="typeScript">
-						<img src="./img/TypeScript.png" alt="typeScript" />
-					</div>
+				<div className="react">
+					<img src="./img/reactLogoFrom_react.dev.png" alt="react" />
+				</div>
+				<div className="jQuery">
+					<img src="./img/jquery.png" alt="jQuery" />
+				</div>
+				<div className="slick">
+					<img src="./img/slick.png" alt="slick" />
+				</div>
+				<div className="typeScript">
+					<img src="./img/TypeScript.png" alt="typeScript" />
 				</div>
 			</Java>
 			<Miscellaneous className="styledMiscellaneous">

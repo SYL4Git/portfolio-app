@@ -45,49 +45,42 @@ export const NonJava = styled.div`
 	}
 `;
 export const Java = styled.div`
+	display: flex;
 	padding: 40px 40px;
 	margin-bottom: 60px;
 	border: 1px solid black;
 	border-radius: 20px;
 	background-color: yellow;
 
-	.javaScript {
+	div {
 		height: 90px;
 		padding: 20px 20px;
 		margin: 0 30px;
 		border: 1px solid black;
 		background-color: white;
 	}
-	.javaScript img {
+
+	div img {
 		display: block;
 		width: 150px;
 		height: auto;
 		margin: 0 auto;
 	}
-
-	.underJs div {
-		height: 90px;
-		padding: 20px 20px;
-		margin: 30px 30px;
-		border: 1px solid black;
-		background-color: white;
-	}
-	.underJs img {
-		display: block;
+	.react img {
+		margin: 0 auto;
 		width: 100px;
 		height: auto;
 	}
-	.react img {
-		margin: 0 auto;
-	}
 	.jQuery img {
-		margin: 20px auto 0;
-	}
-	.slick img {
 		margin: 10px auto 0;
 	}
+	.slick img {
+		margin: 0px auto 0;
+		width: 130px;
+		height: auto;
+	}
 	.typeScript img {
-		margin: 15px auto 0;
+		margin: 5px auto 0;
 	}
 `;
 export const Miscellaneous = styled.div`
