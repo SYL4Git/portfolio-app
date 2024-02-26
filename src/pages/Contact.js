@@ -36,8 +36,8 @@ const Contact = React.forwardRef((_props, ref) => {
 				</div>
 			</div>
 			<div className="inquiry">
+				<h1 className="title">Inquiry</h1>
 				<form className="inquiryForm" onSubmit={handleSubmit}>
-					<h1 className="title">Inquiry</h1>
 					<label className="inquiryLabel">
 						<div className="elements">
 							<p className="elemName">이름:</p>
