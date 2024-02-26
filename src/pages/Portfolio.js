@@ -19,11 +19,23 @@ const Portfolio = React.forwardRef((_props, ref) => {
 						<div className="link">
 							<div className="github">
 								<p>Github:</p>
-								{it.github}
+								<a
+									href={it.github}
+									target="_blank"
+									rel="noopner noreferrer"
+								>
+									Github_link
+								</a>
 							</div>
 							<div className="deploy">
 								<p>Deployed: </p>
-								{it.link}
+								<a
+									href={it.link}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Deployed_link
+								</a>
 							</div>
 						</div>
 						<div className="detail">{it.detail}</div>
