@@ -3,7 +3,7 @@ const PortfolioPackage = () => [
 		id: 1,
 		title: 'Project Samsung',
 		preview: '/img/prjct1.PNG',
-		github: 'to be updated',
+		github: 'https://github.com/SYL4Git/prjct01_samsung.git',
 		link: 'https://prjctsamsung.netlify.app',
 		detail: '삼성전자 홈페이지를 구현한 프로젝트입니다.',
 	},
