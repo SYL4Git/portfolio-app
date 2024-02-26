@@ -23,7 +23,7 @@ const Portfolio = React.forwardRef((_props, ref) => {
 								<a
 									href={it.github}
 									target="_blank"
-									rel="noopner noreferrer"
+									rel="noopener noreferrer"
 								>
 									Github_link
 								</a>
