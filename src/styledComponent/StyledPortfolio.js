@@ -2,39 +2,37 @@ import styled from 'styled-components';
 
 export const StyledPortfolio = styled.div`
 	scroll-margin-top: 180px;
-	width: 1200px;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto 50px;
+	width: 100%;
+	margin: 0 0 100px;
 
 	.title {
-		font-size: 40px;
-		line-height: 50px;
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		line-height: 40px;
 		margin: 0 auto 40px;
 	}
 	.prjct {
 		display: flex;
-		margin-bottom: 60px;
+		justify-content: center;
+		flex-direction: column;
 	}
-	img {
-		width: 600px;
+	.preview img {
+		width: 300px;
 		height: auto;
-		margin-left: 50px;
 		border: 1px solid black;
 	}
 	.info {
-		margin-top: 50px;
-		margin-left: 150px;
+		width: 300px;
+		margin: 50px 0;
 		div {
 			margin-bottom: 8px;
 		}
 		.itmTitle,
 		.detail {
-			display: flex;
 		}
 		.github,
 		.deploy {
-			display: flex;
 		}
 		.itmTitle p,
 		.link p,
@@ -54,5 +52,7 @@ export const StyledPortfolio = styled.div`
 		.detail p {
 			margin-right: 76px;
 		}
+	}
+	@media (min-width: 768px) {
 	}
 `;

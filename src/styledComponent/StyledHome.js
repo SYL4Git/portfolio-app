@@ -14,7 +14,6 @@ export const StyledAbout = styled.div`
 	margin: 160px auto;
 
 	.bannerImg {
-		width: 50%;
 		height: auto;
 		margin: 0 auto 50px;
 
@@ -25,33 +24,32 @@ export const StyledAbout = styled.div`
 	}
 	.catchPhrase {
 		width: 50%;
-		margin: 0px auto;
+		margin: 50px auto 0;
+
 		.wia {
-			display: inline-block;
+			display: inline;
 			text-align: center;
-			margin-top: 80px;
-			margin-bottom: 100px;
 
 			p {
 				margin-bottom: 20px;
 			}
 			.frst {
-				// width: 200px;
-				font-size: 26px;
+				font-size: 30px;
 				line-height: 30px;
 				font-weight: 600;
 			}
 			.scnd {
-				font-size: 14px;
+				font-size: 16px;
+				line-height: 16px;
 			}
 		}
 		.creed {
-			display: inline-block;
+			display: inline;
 			text-align: center;
+
 			.frst {
-				// width: 200px;
 				margin-bottom: 20px;
-				font-size: 26px;
+				font-size: 30px;
 				line-height: 30px;
 				font-weight: 600;
 			}
@@ -59,21 +57,27 @@ export const StyledAbout = styled.div`
 			.thrd,
 			.frth {
 				margin-bottom: 10px;
-				font-size: 14px;
+				font-size: 16px;
+				line-height: 16px;
 			}
 		}
 	}
 
 	@media (min-width: 768px) {
 		display: flex;
+		justify-content: center;
 		flex-direction: row;
-		align-items: stretch;
 
 		.bannerImg {
-			margin: 0 auto;
+			width: 50%
+			height: auto;
+			margin-right: 50px;
 		}
 		.catchPhrase {
-			margin: 0px auto;
+			width: 50%;
+			height: auto;
+			margin-top: 30px;
+			margin-left: 50px;
 			.wia {
 				margin-top: 0;
 			}

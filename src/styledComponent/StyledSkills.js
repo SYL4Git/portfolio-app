@@ -2,15 +2,21 @@ import styled from 'styled-components';
 
 export const StyledSkills = styled.div`
 	scroll-margin-top: 180px;
-	widith: 1200px;
+	widith: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 50px;
 	.title {
-		font-size: 40px;
-		line-height: 50px;
+		font-size: 30px;
+		line-height: 30px;
 		margin-bottom: 40px;
+	}
+	@media (min-width: 768px) {
+		.title {
+			font-size: 40px;
+			line-height: 40px;
+		}
 	}
 `;
 export const NonJava = styled.div`
@@ -25,27 +31,31 @@ export const NonJava = styled.div`
 		padding: 20px 20px;
 		margin: 0 30px;
 		border: 1px solid black;
-
 		background-color: white;
 	}
 	.html img {
-		width: 100px;
+		width: 50px;
 		height: auto;
 	}
 	.css {
 		padding: 20px 20px;
 		margin: -2px 30px 0;
 		border: 1px solid black;
-
 		background-color: white;
 	}
 	.css img {
-		width: 100px;
+		width: 50px;
 		height: auto;
+	}
+	@media (min-width: 768px) {
+		.html img,
+		.css img {
+			width: 100px;
+			height: auto;
+		}
 	}
 `;
 export const Java = styled.div`
-	display: flex;
 	padding: 40px 40px;
 	margin-bottom: 60px;
 	border: 1px solid black;
@@ -53,9 +63,10 @@ export const Java = styled.div`
 	background-color: yellow;
 
 	div {
-		height: 90px;
+		width: 200px;
+		height: 100px;
 		padding: 20px 20px;
-		margin: 0 30px;
+		margin: 0 30px 30px;
 		border: 1px solid black;
 		background-color: white;
 	}
@@ -82,12 +93,15 @@ export const Java = styled.div`
 	.typeScript img {
 		margin: 5px auto 0;
 	}
+	@media (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1000px;
+		margin: 0 50px 60px;
+	}
 `;
 export const Miscellaneous = styled.div`
-	width: 800px;
 	height: auto;
-	display: flex;
-	flex-wrap: wrap;
 	padding: 40px 40px;
 	margin-bottom: 60px;
 	border: 1px solid black;
@@ -95,13 +109,15 @@ export const Miscellaneous = styled.div`
 	background-color: yellow;
 
 	div {
-		height: 90px;
+		width: 200px;
+		height: 100px;
 		padding: 20px 20px;
 		margin: 30px 30px;
 		border: 1px solid black;
 		background-color: white;
 	}
 	div img {
+		display: block;
 		width: 150px;
 		height: auto;
 		margin: 10px auto 0;
@@ -116,5 +132,11 @@ export const Miscellaneous = styled.div`
 		width: 150px;
 		height: 90px;
 		margin-top: 0;
+	}
+	@media (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1000px;
+		margin: 0 50px 60px;
 	}
 `;

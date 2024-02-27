@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const StyledContact = styled.div`
 	scroll-margin-top: 180px;
-	width: 1200px;
+	width: 100%;
 	margin: 100px auto;
 	.contactInfo {
-		width: 600px;
+		width: 300px;
 		margin: 80px auto;
 		padding: 20px;
 	}
@@ -36,8 +36,8 @@ export const StyledContact = styled.div`
 		}
 	}
 	.inquiryForm {
-		width: 600px;
-		margin: 10px auto;
+		width: 200px;
+		margin: 10px 0;
 		padding: 30px 0;
 		border: 1px solid black;
 		border-radius: 20px;
@@ -52,7 +52,7 @@ export const StyledContact = styled.div`
 			}
 			input {
 				display: block;
-				width: 400px;
+				width: 200px;
 				text-indent: 10px;
 				margin: 20px 10px;
 				border-radius: 10px;
