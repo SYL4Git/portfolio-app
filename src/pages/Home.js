@@ -23,7 +23,7 @@ const Home = () => {
 		setMenuModal((prevState) => !prevState);
 	};
 	const { scrollTo } = useScrollTo();
-	const [istabScreen, setIsTabScreen] = useState(window.innerWidth >= 768);
+	const [isTabScreen, setIsTabScreen] = useState(window.innerWidth >= 768);
 
 	useEffect(() => {
 		const handleScreenResize = () => setIsTabScreen(window.innerWidth >= 768);
@@ -33,18 +33,21 @@ const Home = () => {
 
 	return (
 		<StyledHome className="styledHome">
-			{istabScreen ? (
-				<Header>
-					<ul>
-						<li>HOME</li>
-						<li>SKILLS</li>
-						<li>PORTFOLIO</li>
-						<li>CONTACT</li>
-					</ul>
-				</Header>
+			{isTabScreen ? (
+				<>
+					<Header
+						scrollToHome={scrollToHome}
+						isTabScreen={isTabScreen}
+						scrollTo={scrollTo}
+						skillsRef={skillsRef}
+						portfolioRef={portfolioRef}
+						contactRef={contactRef}
+					/>
+				</>
 			) : (
 				<>
 					<Header
+						isTabScreen={isTabScreen}
 						toggleMenuModal={toggleMenuModal}
 						scrollToHome={scrollToHome}
 					/>
