@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledPortfolio = styled.div`
 	scroll-margin-top: 180px;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 	margin: 0 0 100px;
 
 	.title {
@@ -13,9 +15,7 @@ export const StyledPortfolio = styled.div`
 		margin: 0 auto 40px;
 	}
 	.prjct {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
+		margin: 0 auto;
 	}
 	.preview img {
 		width: 300px;
@@ -54,5 +54,15 @@ export const StyledPortfolio = styled.div`
 		}
 	}
 	@media (min-width: 768px) {
+		.prjct {
+			display: flex;
+		}
+		.preview {
+			margin-top: 20px;
+			margin-right: 30px;
+		}
+		.info {
+			margin-top: 0;
+		}
 	}
 `;

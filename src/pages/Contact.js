@@ -18,20 +18,16 @@ const Contact = React.forwardRef((_props, ref) => {
 				<h1 className="title">Contact information</h1>
 				<div className="CIIn">
 					<div className="CILeft">
-						<p>
-							이름: <span>이승열</span>
-						</p>
-						<p>
-							생년월일: <span>1992.10.07</span>
-						</p>
+						<p>이름:</p>
+						<span>이승열</span>
+						<p>생년월일:</p>
+						<span>1992.10.07</span>
 					</div>
 					<div className="CIRight">
-						<p>
-							연락처: <span>010 8578 3666</span>
-						</p>
-						<p>
-							이메일: <span>leesngyl1007@gmail.com</span>
-						</p>
+						<p>연락처:</p>
+						<span>010 8578 3666</span>
+						<p>이메일:</p>
+						<span>leesngyl1007@gmail.com</span>
 					</div>
 				</div>
 			</div>

@@ -37,7 +37,7 @@ export const StyledContact = styled.div`
 	}
 	.inquiryForm {
 		width: 200px;
-		margin: 10px 0;
+		margin: 10px auto;
 		padding: 30px 0;
 		border: 1px solid black;
 		border-radius: 20px;
