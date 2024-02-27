@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
 
 import { StyledHome, StyledAbout } from '../styledComponent/StyledHome';
@@ -23,22 +23,43 @@ const Home = () => {
 		setMenuModal((prevState) => !prevState);
 	};
 	const { scrollTo } = useScrollTo();
+	const [istabScreen, setIsTabScreen] = useState(window.innerWidth >= 768);
+
+	useEffect(() => {
+		const handleScreenResize = () => setIsTabScreen(window.innerWidth >= 768);
+		window.addEventListener('resize', handleScreenResize);
+		return () => window.removeEventListener('resize', handleScreenResize);
+	}, []);
 
 	return (
 		<StyledHome className="styledHome">
-			<Header
-				toggleMenuModal={toggleMenuModal}
-				scrollToHome={scrollToHome}
-			/>
-			{menuModal && (
-				<MenuModal
-					scrollToHome={scrollToHome}
-					scrollTo={scrollTo}
-					skillsRef={skillsRef}
-					portfolioRef={portfolioRef}
-					contactRef={contactRef}
-				/>
+			{istabScreen ? (
+				<Header>
+					<ul>
+						<li>HOME</li>
+						<li>SKILLS</li>
+						<li>PORTFOLIO</li>
+						<li>CONTACT</li>
+					</ul>
+				</Header>
+			) : (
+				<>
+					<Header
+						toggleMenuModal={toggleMenuModal}
+						scrollToHome={scrollToHome}
+					/>
+					{menuModal && (
+						<MenuModal
+							scrollToHome={scrollToHome}
+							scrollTo={scrollTo}
+							skillsRef={skillsRef}
+							portfolioRef={portfolioRef}
+							contactRef={contactRef}
+						/>
+					)}
+				</>
 			)}
+
 			<StyledAbout className="styledAbout">
 				<div className="bannerImg">
 					<img src="./img/boatOnSpace.jpg" alt="banner" />
