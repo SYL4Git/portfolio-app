@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const StyledHome = styled.div`
 	position: relative;
+	min-width: 360px;
 	width: 100%;
 	margin: 0 auto;
 `;
@@ -10,7 +11,6 @@ export const StyledAbout = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-width: 360px;
 	margin: 160px auto;
 
 	.bannerImg {

@@ -19,7 +19,7 @@ export const StyledPortfolio = styled.div`
 	}
 	.preview,
 	.info {
-		padding: 0 100px;
+		padding: 0 10px;
 	}
 	.preview img {
 		width: 100%;
@@ -33,12 +33,7 @@ export const StyledPortfolio = styled.div`
 		div {
 			margin-bottom: 10px;
 		}
-		.itmTitle,
-		.detail {
-		}
-		.github,
-		.deploy {
-		}
+
 		.itmTitle p,
 		.link p,
 		.detail p {

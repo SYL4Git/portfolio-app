@@ -33,6 +33,7 @@ const Contact = React.forwardRef((_props, ref) => {
 			</div>
 			<div className="inquiry">
 				<h1 className="title">Inquiry</h1>
+				{/* <h3 className='subtitle'>If you have inquires, please use the inqury form below.</h3> */}
 				<form className="inquiryForm" onSubmit={handleSubmit}>
 					<label className="inquiryLabel">
 						<div className="elements">
