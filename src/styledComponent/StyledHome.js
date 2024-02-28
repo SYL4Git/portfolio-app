@@ -67,17 +67,18 @@ export const StyledAbout = styled.div`
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-
-		.bannerImg {
+		padding: 50px;
+		
+		.bannerImg, .catchPhrase{
 			width: 50%
 			height: auto;
-			margin-right: 50px;
+			margin: 0 auto 0;
+		}
+		.bannerImg {
+			margin-right:50px;
 		}
 		.catchPhrase {
-			width: 50%;
-			height: auto;
-			margin-top: 30px;
-			margin-left: 50px;
+			margin-left:50px;
 			.wia {
 				margin-top: 0;
 			}

@@ -15,18 +15,23 @@ export const StyledPortfolio = styled.div`
 		margin: 0 auto 40px;
 	}
 	.prjct {
-		margin: 0 auto;
+		margin: 50px auto;
+	}
+	.preview,
+	.info {
+		padding: 0 100px;
 	}
 	.preview img {
-		width: 300px;
+		width: 100%;
 		height: auto;
 		border: 1px solid black;
 	}
 	.info {
-		width: 300px;
-		margin: 50px 0;
+		width: 100%;
+		margin-top: 20px;
+
 		div {
-			margin-bottom: 8px;
+			margin-bottom: 10px;
 		}
 		.itmTitle,
 		.detail {
@@ -57,12 +62,20 @@ export const StyledPortfolio = styled.div`
 		.prjct {
 			display: flex;
 		}
+		.preview,
+		.info {
+			padding: 0 30px;
+		}
 		.preview {
-			margin-top: 20px;
-			margin-right: 30px;
+			// margin-top: 20px;
+			// margin-right: 30px;
 		}
 		.info {
 			margin-top: 0;
 		}
+	}
+	@media (min-width: 1200px) {
+		max-width: 1200px;
+		margin: 0 auto 100px;
 	}
 `;
