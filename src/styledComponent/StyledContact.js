@@ -8,7 +8,7 @@ export const StyledContact = styled.div`
 	align-items: center;
 
 	.contactInfo {
-		width: 70%;
+		width: 65%;
 		// margin: 50px auto;
 		// padding: 0 50px;
 	}
@@ -41,7 +41,7 @@ export const StyledContact = styled.div`
 		margin-bottom: 10px;
 	}
 	.inquiry {
-		width: 70%;
+		width: 65%;
 
 		.inquiryForm {
 			border: 1px solid black;
@@ -78,8 +78,8 @@ export const StyledContact = styled.div`
 			margin: 10px 30px 10px;
 		}
 	}
-	@media (min-width: 768px) {
-	}
-	@media (min-width: 1200px) {
-	}
+	// @media (min-width: 768px) {
+	// }
+	// @media (min-width: 1200px) {
+	// }
 `;

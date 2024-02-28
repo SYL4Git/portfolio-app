@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledSkills = styled.div`
 	scroll-margin-top: 180px;
-	widith: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
