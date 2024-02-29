@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledHome = styled.div`
+	// display: none;
 	position: relative;
 	min-width: 360px;
 	width: 100%;
 	margin: 0 auto;
-	// overflow-x: hidden;
 `;
 
 export const StyledAbout = styled.div`
@@ -68,7 +68,6 @@ export const StyledAbout = styled.div`
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
-		padding: 50px;
 		
 		.bannerImg, .catchPhrase{
 			width: 50%

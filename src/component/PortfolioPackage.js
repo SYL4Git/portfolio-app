@@ -38,7 +38,7 @@ const PortfolioPackage = () => [
 		github: 'https://github.com/SYL4Git/AptTest_240103_final.git',
 		link: 'https://react-movie-list-api.web.app',
 		detail:
-			'영화 제목 검색, 필터링 등의 기능을 탑재한 독자적으로 구현한 영화 목록 프로젝트입니다. ',
+			'영화 제목 검색, 필터링 등의 기능을 탑재한 영화 목록 프로젝트입니다. ',
 	},
 	{
 		id: 6,
@@ -55,7 +55,7 @@ const PortfolioPackage = () => [
 		github: 'https://github.com/SYL4Git/AptTest_231101_final.git',
 		link: 'https://prjctulsatour.netlify.app',
 		detail:
-			'가상의 울산 관광소개 홈페이지를 가상의 사용자 및 소비자층에 맞춰 독자적으로 구현한 프로젝트입니다.',
+			'가상의 울산 관광소개 홈페이지를 가상의 사용자 및 소비자층에 맞춰 구현한 프로젝트입니다.',
 	},
 ];
 export default PortfolioPackage;

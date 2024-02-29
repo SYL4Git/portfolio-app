@@ -5,7 +5,6 @@ export const StyledPortfolio = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin: 0 0 100px 0;
 
 	.title {
 		display: flex;
@@ -15,20 +14,22 @@ export const StyledPortfolio = styled.div`
 		margin: 0 auto 40px;
 	}
 	.prjct {
-		margin: 50px 0;
+		padding: 20px 20px;
 	}
-	.preview,
-	.info {
-		padding: 0 10px;
-	}
-	.preview img {
+	.preview {
 		width: 100%;
 		height: auto;
+		margin-bottom: 30px;
 		border: 1px solid black;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
+
 	.info {
 		width: 100%;
-		margin-top: 20px;
 
 		div {
 			display: flex;
@@ -64,10 +65,6 @@ export const StyledPortfolio = styled.div`
 		.preview,
 		.info {
 			padding: 0 30px;
-		}
-		.preview {
-			// margin-top: 20px;
-			// margin-right: 30px;
 		}
 		.info {
 			margin-top: 0;

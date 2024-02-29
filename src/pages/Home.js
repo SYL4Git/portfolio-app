@@ -8,7 +8,7 @@ import MenuModal from '../component/MenuModal';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
-import { OverflowHidden } from '../styledComponent/OverflowHidden';
+// import { OverflowHidden } from '../styledComponent/OverflowHidden';
 
 const Home = () => {
 	const [menuModal, setMenuModal] = useState(false);
@@ -34,7 +34,6 @@ const Home = () => {
 
 	return (
 		<StyledHome className="styledHome">
-			{/* <OverflowHidden> */}
 			{isTabScreen ? (
 				<>
 					<Header
@@ -64,8 +63,6 @@ const Home = () => {
 					)}
 				</>
 			)}
-			{/* </OverflowHidden> */}
-
 			<StyledAbout className="styledAbout">
 				<div className="bannerImg">
 					<img src="./img/boatOnSpace.jpg" alt="banner" />

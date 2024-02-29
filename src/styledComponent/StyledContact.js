@@ -9,9 +9,7 @@ export const StyledContact = styled.div`
 	margin: 50px 0;
 
 	.contactInfo {
-		width: 65%;
-		// margin: 50px auto;
-		// padding: 0 50px;
+		width: 80%;
 	}
 	.title {
 		display: flex;
@@ -20,25 +18,23 @@ export const StyledContact = styled.div`
 		font-size: 40px;
 		line-height: 40px;
 		padding: 20px 0 40px 0;
+		margin: 0 auto;
+	}
+	.contactInfo,
+	.inquiry {
+		max-width: 500px;
+		margin: 20px auto;
 	}
 	.CIIn {
 		display: flex;
 		justify-content: space-between;
-		max-width: 700px;
-		// margin: 80px auto;
-		// padding: 20px;
+		padding: 10px;
 		border: 1px solid black;
 		border-radius: 20px;
 	}
-	.CILeft {
-		margin-left: 30px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
+	.CILeft,
 	.CIRight {
-		margin-right: 30px;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin: 20px 20px;
 	}
 	.CILeft p,
 	.CIRight p {
@@ -53,10 +49,9 @@ export const StyledContact = styled.div`
 		margin-bottom: 10px;
 	}
 	.inquiry {
-		width: 65%;
+		width: 80%;
 
 		.inquiryForm {
-			max-width: 700px;
 			border: 1px solid black;
 			border-radius: 20px;
 			padding: 10px;
