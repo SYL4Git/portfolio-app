@@ -4,7 +4,7 @@ export const StyledHome = styled.div`
 	position: relative;
 	min-width: 360px;
 	width: 100%;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	margin: 0 auto;
 `;
 

@@ -8,6 +8,7 @@ import MenuModal from '../component/MenuModal';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
+import { OverflowHidden } from '../styledComponent/OverflowHidden';
 
 const Home = () => {
 	const [menuModal, setMenuModal] = useState(false);
@@ -33,35 +34,37 @@ const Home = () => {
 
 	return (
 		<StyledHome className="styledHome">
-			{isTabScreen ? (
-				<>
-					<Header
-						scrollToHome={scrollToHome}
-						isTabScreen={isTabScreen}
-						scrollTo={scrollTo}
-						skillsRef={skillsRef}
-						portfolioRef={portfolioRef}
-						contactRef={contactRef}
-					/>
-				</>
-			) : (
-				<>
-					<Header
-						isTabScreen={isTabScreen}
-						toggleMenuModal={toggleMenuModal}
-						scrollToHome={scrollToHome}
-					/>
-					{menuModal && (
-						<MenuModal
+			<OverflowHidden>
+				{isTabScreen ? (
+					<>
+						<Header
 							scrollToHome={scrollToHome}
+							isTabScreen={isTabScreen}
 							scrollTo={scrollTo}
 							skillsRef={skillsRef}
 							portfolioRef={portfolioRef}
 							contactRef={contactRef}
 						/>
-					)}
-				</>
-			)}
+					</>
+				) : (
+					<>
+						<Header
+							isTabScreen={isTabScreen}
+							toggleMenuModal={toggleMenuModal}
+							scrollToHome={scrollToHome}
+						/>
+						{menuModal && (
+							<MenuModal
+								scrollToHome={scrollToHome}
+								scrollTo={scrollTo}
+								skillsRef={skillsRef}
+								portfolioRef={portfolioRef}
+								contactRef={contactRef}
+							/>
+						)}
+					</>
+				)}
+			</OverflowHidden>
 
 			<StyledAbout className="styledAbout">
 				<div className="bannerImg">
