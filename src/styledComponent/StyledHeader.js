@@ -30,7 +30,7 @@ export const StyledHeaderTab = styled.div`
 	@media (min-width: 768px) {
 		width: 100%;
 		height: 80px;
-		margin: 0 auto;
+		// margin: 0 auto;
 		position: sticky;
 		top: 0;
 		display: flex;

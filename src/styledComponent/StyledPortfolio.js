@@ -5,7 +5,7 @@ export const StyledPortfolio = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin: 0 0 100px;
+	margin: 0 0 100px 0;
 
 	.title {
 		display: flex;
@@ -15,7 +15,7 @@ export const StyledPortfolio = styled.div`
 		margin: 0 auto 40px;
 	}
 	.prjct {
-		margin: 50px auto;
+		margin: 50px 0;
 	}
 	.preview,
 	.info {
@@ -31,7 +31,11 @@ export const StyledPortfolio = styled.div`
 		margin-top: 20px;
 
 		div {
+			display: flex;
 			margin-bottom: 10px;
+		}
+		.link {
+			display: block;
 		}
 
 		.itmTitle p,
