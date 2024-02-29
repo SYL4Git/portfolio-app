@@ -14,7 +14,7 @@ export const StyledPortfolio = styled.div`
 		margin: 0 auto 40px;
 	}
 	.prjct {
-		padding: 20px 20px;
+		padding: 0 20px;
 	}
 	.preview {
 		width: 100%;
@@ -61,13 +61,11 @@ export const StyledPortfolio = styled.div`
 	@media (min-width: 768px) {
 		.prjct {
 			display: flex;
+			margin: 0 auto;
 		}
 		.preview,
 		.info {
-			padding: 0 30px;
-		}
-		.info {
-			margin-top: 0;
+			margin: 20px 30px;
 		}
 	}
 	@media (min-width: 1200px) {

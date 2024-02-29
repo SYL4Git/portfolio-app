@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledHome = styled.div`
-	// display: none;
 	position: relative;
 	min-width: 360px;
 	width: 100%;
@@ -68,6 +67,7 @@ export const StyledAbout = styled.div`
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
+		padding: 0 20px;
 		
 		.bannerImg, .catchPhrase{
 			width: 50%
