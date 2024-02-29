@@ -4,8 +4,8 @@ export const StyledHome = styled.div`
 	position: relative;
 	min-width: 360px;
 	width: 100%;
-	// overflow-x: hidden;
 	margin: 0 auto;
+	// overflow-x: hidden;
 `;
 
 export const StyledAbout = styled.div`

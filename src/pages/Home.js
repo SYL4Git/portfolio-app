@@ -34,37 +34,37 @@ const Home = () => {
 
 	return (
 		<StyledHome className="styledHome">
-			<OverflowHidden>
-				{isTabScreen ? (
-					<>
-						<Header
+			{/* <OverflowHidden> */}
+			{isTabScreen ? (
+				<>
+					<Header
+						scrollToHome={scrollToHome}
+						isTabScreen={isTabScreen}
+						scrollTo={scrollTo}
+						skillsRef={skillsRef}
+						portfolioRef={portfolioRef}
+						contactRef={contactRef}
+					/>
+				</>
+			) : (
+				<>
+					<Header
+						isTabScreen={isTabScreen}
+						toggleMenuModal={toggleMenuModal}
+						scrollToHome={scrollToHome}
+					/>
+					{menuModal && (
+						<MenuModal
 							scrollToHome={scrollToHome}
-							isTabScreen={isTabScreen}
 							scrollTo={scrollTo}
 							skillsRef={skillsRef}
 							portfolioRef={portfolioRef}
 							contactRef={contactRef}
 						/>
-					</>
-				) : (
-					<>
-						<Header
-							isTabScreen={isTabScreen}
-							toggleMenuModal={toggleMenuModal}
-							scrollToHome={scrollToHome}
-						/>
-						{menuModal && (
-							<MenuModal
-								scrollToHome={scrollToHome}
-								scrollTo={scrollTo}
-								skillsRef={skillsRef}
-								portfolioRef={portfolioRef}
-								contactRef={contactRef}
-							/>
-						)}
-					</>
-				)}
-			</OverflowHidden>
+					)}
+				</>
+			)}
+			{/* </OverflowHidden> */}
 
 			<StyledAbout className="styledAbout">
 				<div className="bannerImg">
