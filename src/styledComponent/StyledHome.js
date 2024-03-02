@@ -41,7 +41,7 @@ export const StyledAbout = styled.div`
 			}
 			.scnd {
 				font-size: 16px;
-				line-height: 16px;
+				line-height: 25px;
 			}
 		}
 		.creed {
