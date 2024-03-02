@@ -9,6 +9,7 @@ export const StyledHome = styled.div`
 
 export const StyledAbout = styled.div`
 	display: flex;
+	// display: none;
 	flex-direction: column;
 	align-items: center;
 	margin: 100px auto 160px;
@@ -65,9 +66,11 @@ export const StyledAbout = styled.div`
 
 	@media (min-width: 768px) {
 		display: flex;
+		// display: none;
+		width: 100%;
 		justify-content: center;
 		flex-direction: row;
-		padding: 0 20px;
+		// padding: 0 20px;
 		
 		.bannerImg, .catchPhrase{
 			width: 50%
@@ -92,6 +95,8 @@ export const StyledAbout = styled.div`
 		}
 	}
 	@media (min-width: 1200px) {
-		width: 1200px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 20px;
 	}
 `;

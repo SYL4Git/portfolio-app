@@ -88,7 +88,7 @@ export const StyledContact = styled.div`
 	@media (min-width: 768px) {
 	}
 	@media (min-width: 1200px) {
-		width: 1200px;
+		width: 100%;
 		margin: 50px auto;
 	}
 `;

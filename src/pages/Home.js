@@ -8,7 +8,6 @@ import MenuModal from '../component/MenuModal';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
-// import { OverflowHidden } from '../styledComponent/OverflowHidden';
 
 const Home = () => {
 	const [menuModal, setMenuModal] = useState(false);
