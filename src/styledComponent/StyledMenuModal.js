@@ -9,9 +9,10 @@ export const StyledMenuModal = styled.div`
 	left: 0;
 	right: 0;
 	padding-right: 40px;
-	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.5);
 	z-index: 1000;
+	cursor: pointer;
+
 	li {
 		margin: 4px 0;
 		font-size: 16px;

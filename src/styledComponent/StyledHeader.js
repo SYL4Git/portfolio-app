@@ -44,11 +44,11 @@ export const StyledHeaderTab = styled.div`
 		}
 		ul {
 			display: flex;
-			margin-top: 10px;
-			margin-right: 80px;
+			margin: 10px 80px 45px 0;
 
 			li {
 				margin-left: 20px;
+				cursor: pointer;
 			}
 		}
 	}
