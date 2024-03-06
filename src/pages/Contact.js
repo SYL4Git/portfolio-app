@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { StyledContact } from '../styledComponent/StyledContact';
 
 const Contact = React.forwardRef((_props, ref) => {
-	const [name, setName] = useState('');
-	const [age, setAge] = useState('');
-	const [number, setNumber] = useState('');
-	const [email, setEmail] = useState('');
-	const [inquiry, setInquiry] = useState('');
+	// const [name, setName] = useState('');
+	// const [age, setAge] = useState('');
+	// const [number, setNumber] = useState('');
+	// const [email, setEmail] = useState('');
+	// const [inquiry, setInquiry] = useState('');
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		console.log('Form submitted:', name);
-	};
+	// const handleSubmit = (e) => {
+	// 	e.preventDefault();
+	// 	console.log('Form submitted:', name);
+	// };
 	return (
 		<StyledContact ref={ref} className="styledContact">
 			<div className="contactInfo">
@@ -31,9 +31,9 @@ const Contact = React.forwardRef((_props, ref) => {
 					</div>
 				</div>
 			</div>
-			<div className="inquiry">
+			{/* <div className="inquiry">
 				<h1 className="title">Inquiry</h1>
-				{/* <h3 className='subtitle'>If you have inquires, please use the inqury form below.</h3> */}
+				<h3 className='subtitle'>If you have inquires, please use the inqury form below.</h3>
 				<form className="inquiryForm" onSubmit={handleSubmit}>
 					<label className="inquiryLabel">
 						<div className="elements">
@@ -80,7 +80,7 @@ const Contact = React.forwardRef((_props, ref) => {
 						<input className="btnSubmit" type="submit" value="보내기" />
 					</div>
 				</form>
-			</div>
+			</div> */}
 		</StyledContact>
 	);
 });

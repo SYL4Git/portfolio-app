@@ -40,7 +40,7 @@ export const StyledAbout = styled.div`
 			}
 			.scnd {
 				font-size: 16px;
-				line-height: 16px;
+				line-height: 25px;
 			}
 		}
 		.creed {
@@ -65,8 +65,10 @@ export const StyledAbout = styled.div`
 
 	@media (min-width: 768px) {
 		display: flex;
+		width: 100%;
 		justify-content: center;
 		flex-direction: row;
+		box-sizing: border-box;
 		padding: 0 20px;
 		
 		.bannerImg, .catchPhrase{
@@ -92,6 +94,8 @@ export const StyledAbout = styled.div`
 		}
 	}
 	@media (min-width: 1200px) {
-		width: 1200px;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 20px;
 	}
 `;

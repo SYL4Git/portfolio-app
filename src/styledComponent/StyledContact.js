@@ -6,7 +6,7 @@ export const StyledContact = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 50px 0;
+	margin: 100px 0 300px;
 
 	.contactInfo {
 		width: 80%;
@@ -88,7 +88,7 @@ export const StyledContact = styled.div`
 	@media (min-width: 768px) {
 	}
 	@media (min-width: 1200px) {
-		width: 1200px;
+		width: 100%;
 		margin: 50px auto;
 	}
 `;
